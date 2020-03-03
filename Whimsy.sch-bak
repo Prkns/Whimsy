@@ -890,4 +890,31 @@ Text GLabel 3650 4400 0    50   Input ~ 0
 col4
 Text GLabel 3650 4500 0    50   Input ~ 0
 col5
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E7C12A5
+P 3150 4250
+F 0 "J2" H 2950 4500 50  0000 L CNN
+F 1 "LED Breakout" H 2750 4000 50  0000 L CNN
+F 2 "" H 3150 4250 50  0001 C CNN
+F 3 "~" H 3150 4250 50  0001 C CNN
+	1    3150 4250
+	1    0    0    -1  
+$EndComp
+Text Label 2850 4150 2    50   ~ 0
+VCC
+Text Label 2850 4350 2    50   ~ 0
+GND
+Text Label 2850 4250 2    50   ~ 0
+LED
+Wire Wire Line
+	2850 4150 2950 4150
+Wire Wire Line
+	2950 4250 2850 4250
+Wire Wire Line
+	2950 4350 2850 4350
+Text HLabel 3650 3400 0    50   Input ~ 0
+rot0
+Text HLabel 3650 3500 0    50   Input ~ 0
+rot1
 $EndSCHEMATC
