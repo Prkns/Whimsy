@@ -4,518 +4,23 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Whimsey"
+Date "2020-03-03"
+Rev "A"
+Comp "Prkns"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L keyboard_parts:ATMEGA32U4 U1
-U 1 1 5E5E2C2F
-P 5500 5150
-F 0 "U1" H 5525 6487 60  0000 C CNN
-F 1 "ATMEGA32U4" H 5525 6381 60  0000 C CNN
-F 2 "" H 5500 5150 60  0000 C CNN
-F 3 "" H 5500 5150 60  0000 C CNN
-	1    5500 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:XTAL_GND X1
-U 1 1 5E5E92AE
-P 3600 5750
-F 0 "X1" H 3600 5850 60  0000 C CNN
-F 1 "XTAL_GND" H 3600 5650 60  0000 C CNN
-F 2 "" H 3600 5750 60  0000 C CNN
-F 3 "" H 3600 5750 60  0000 C CNN
-	1    3600 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5E5EB8B2
-P 3900 5950
-F 0 "C2" H 3800 6000 50  0000 L CNN
-F 1 "22p" H 3900 5900 50  0000 L CNN
-F 2 "" H 3900 5950 50  0001 C CNN
-F 3 "~" H 3900 5950 50  0001 C CNN
-	1    3900 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 5E5EC634
-P 3300 5950
-F 0 "C1" H 3200 6000 50  0000 L CNN
-F 1 "22p" H 3300 5900 50  0000 L CNN
-F 2 "" H 3300 5950 50  0001 C CNN
-F 3 "~" H 3300 5950 50  0001 C CNN
-	1    3300 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E5ED192
-P 3600 6150
-F 0 "#PWR?" H 3600 6200 20  0001 C CNN
-F 1 "GND" H 3600 6209 30  0000 C CNN
-F 2 "" H 3600 6150 60  0000 C CNN
-F 3 "" H 3600 6150 60  0000 C CNN
-	1    3600 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 5750 3300 5600
-Wire Wire Line
-	3300 5600 4450 5600
-Wire Wire Line
-	3300 5750 3300 5850
-Connection ~ 3300 5750
-Wire Wire Line
-	3300 6050 3300 6100
-Wire Wire Line
-	3300 6100 3600 6100
-Wire Wire Line
-	3600 6100 3900 6100
-Wire Wire Line
-	3900 6100 3900 6050
-Connection ~ 3600 6100
-Wire Wire Line
-	3900 5750 3900 5700
-Wire Wire Line
-	3900 5700 4450 5700
-Wire Wire Line
-	3900 5750 3900 5850
-Connection ~ 3900 5750
-Wire Wire Line
-	3600 5950 3600 6100
-$Comp
-L power:VCC #PWR?
-U 1 1 5E5F7AF9
-P 3250 3200
-F 0 "#PWR?" H 3250 3050 50  0001 C CNN
-F 1 "VCC" H 3267 3373 50  0000 C CNN
-F 2 "" H 3250 3200 50  0001 C CNN
-F 3 "" H 3250 3200 50  0001 C CNN
-	1    3250 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5E5F80A1
-P 3250 3500
-F 0 "C3" H 3150 3550 50  0000 L CNN
-F 1 "0.1u" H 3250 3450 50  0000 L CNN
-F 2 "" H 3250 3500 50  0001 C CNN
-F 3 "~" H 3250 3500 50  0001 C CNN
-	1    3250 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 5E5F9075
-P 3500 3500
-F 0 "C4" H 3400 3550 50  0000 L CNN
-F 1 "0.1u" H 3500 3450 50  0000 L CNN
-F 2 "" H 3500 3500 50  0001 C CNN
-F 3 "~" H 3500 3500 50  0001 C CNN
-	1    3500 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 5E5F95C3
-P 3750 3500
-F 0 "C5" H 3650 3550 50  0000 L CNN
-F 1 "0.1u" H 3750 3450 50  0000 L CNN
-F 2 "" H 3750 3500 50  0001 C CNN
-F 3 "~" H 3750 3500 50  0001 C CNN
-	1    3750 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 5E5F9ABC
-P 4000 3500
-F 0 "C6" H 3900 3550 50  0000 L CNN
-F 1 "0.1u" H 4000 3450 50  0000 L CNN
-F 2 "" H 4000 3500 50  0001 C CNN
-F 3 "~" H 4000 3500 50  0001 C CNN
-	1    4000 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 5E5FAEE9
-P 4250 3500
-F 0 "C7" H 4150 3550 50  0000 L CNN
-F 1 "4.7u" H 4250 3450 50  0000 L CNN
-F 2 "" H 4250 3500 50  0001 C CNN
-F 3 "~" H 4250 3500 50  0001 C CNN
-	1    4250 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E5FCDA9
-P 3250 3800
-F 0 "#PWR?" H 3250 3850 20  0001 C CNN
-F 1 "GND" H 3250 3859 30  0000 C CNN
-F 2 "" H 3250 3800 60  0000 C CNN
-F 3 "" H 3250 3800 60  0000 C CNN
-	1    3250 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 3200 3250 3300
-Wire Wire Line
-	3250 3600 3250 3700
-Wire Wire Line
-	3250 3300 3500 3300
-Wire Wire Line
-	4250 3300 4250 3400
-Connection ~ 3250 3300
-Wire Wire Line
-	3250 3300 3250 3400
-Wire Wire Line
-	4250 3600 4250 3700
-Wire Wire Line
-	4250 3700 4000 3700
-Connection ~ 3250 3700
-Wire Wire Line
-	3250 3700 3250 3800
-Wire Wire Line
-	3500 3600 3500 3700
-Connection ~ 3500 3700
-Wire Wire Line
-	3500 3700 3250 3700
-Wire Wire Line
-	3750 3600 3750 3700
-Connection ~ 3750 3700
-Wire Wire Line
-	3750 3700 3500 3700
-Wire Wire Line
-	4000 3600 4000 3700
-Connection ~ 4000 3700
-Wire Wire Line
-	4000 3700 3750 3700
-Wire Wire Line
-	4000 3400 4000 3300
-Connection ~ 4000 3300
-Wire Wire Line
-	4000 3300 4250 3300
-Wire Wire Line
-	3750 3400 3750 3300
-Connection ~ 3750 3300
-Wire Wire Line
-	3750 3300 4000 3300
-Wire Wire Line
-	3500 3400 3500 3300
-Connection ~ 3500 3300
-Wire Wire Line
-	3500 3300 3750 3300
-$Comp
-L power:VCC #PWR?
-U 1 1 5E6097FD
-P 3350 5050
-F 0 "#PWR?" H 3350 4900 50  0001 C CNN
-F 1 "VCC" V 3368 5177 50  0000 L CNN
-F 2 "" H 3350 5050 50  0001 C CNN
-F 3 "" H 3350 5050 50  0001 C CNN
-	1    3350 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E609B93
-P 3300 5300
-F 0 "#PWR?" H 3300 5350 20  0001 C CNN
-F 1 "GND" V 3300 5329 30  0000 L CNN
-F 2 "" H 3300 5300 60  0000 C CNN
-F 3 "" H 3300 5300 60  0000 C CNN
-	1    3300 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L keyboard_parts:SW_PUSH SW1
-U 1 1 5E60A341
-P 3700 5300
-F 0 "SW1" H 3850 5400 50  0000 C CNN
-F 1 "SW_PUSH" H 3700 5250 50  0000 C CNN
-F 2 "" H 3700 5300 60  0000 C CNN
-F 3 "" H 3700 5300 60  0000 C CNN
-	1    3700 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5E60BA3D
-P 3700 5050
-F 0 "R1" V 3700 4950 50  0000 C CNN
-F 1 "10k" V 3700 5150 50  0000 C CNN
-F 2 "" V 3630 5050 50  0001 C CNN
-F 3 "~" H 3700 5050 50  0001 C CNN
-	1    3700 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3300 5300 3400 5300
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E620EAE
-P 7250 5200
-F 0 "#PWR?" H 7250 5250 20  0001 C CNN
-F 1 "GND" V 7250 5229 30  0000 L CNN
-F 2 "" H 7250 5200 60  0000 C CNN
-F 3 "" H 7250 5200 60  0000 C CNN
-	1    7250 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5E621101
-P 6950 5200
-F 0 "R2" V 6950 5300 50  0000 C CNN
-F 1 "10k" V 6950 5100 50  0000 C CNN
-F 2 "" V 6880 5200 50  0001 C CNN
-F 3 "~" H 6950 5200 50  0001 C CNN
-	1    6950 5200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7100 5200 7250 5200
-Wire Wire Line
-	6600 5200 6800 5200
-$Comp
-L keyboard_parts:USB_mini_micro_B J1
-U 1 1 5E6295ED
-P 3600 4350
-F 0 "J1" H 3200 4300 60  0000 C CNN
-F 1 "USB_mini_micro_B" H 3450 4600 60  0001 C CNN
-F 2 "" H 3550 4350 60  0000 C CNN
-F 3 "" H 3550 4350 60  0000 C CNN
-	1    3600 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5E62A776
-P 3800 4100
-F 0 "#PWR?" H 3800 3950 50  0001 C CNN
-F 1 "VCC" H 3817 4273 50  0000 C CNN
-F 2 "" H 3800 4100 50  0001 C CNN
-F 3 "" H 3800 4100 50  0001 C CNN
-	1    3800 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5E62B43F
-P 4000 4400
-F 0 "R4" V 4000 4350 50  0000 C CNN
-F 1 "22" V 4000 4450 50  0000 C CNN
-F 2 "" V 3930 4400 50  0001 C CNN
-F 3 "~" H 4000 4400 50  0001 C CNN
-	1    4000 4400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5E62B946
-P 4000 4300
-F 0 "R3" V 4000 4250 50  0000 C CNN
-F 1 "22" V 4000 4350 50  0000 C CNN
-F 2 "" V 3930 4300 50  0001 C CNN
-F 3 "~" H 4000 4300 50  0001 C CNN
-	1    4000 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E62BAF0
-P 3900 4500
-F 0 "#PWR?" H 3900 4550 20  0001 C CNN
-F 1 "GND" V 3900 4500 30  0000 L CNN
-F 2 "" H 3900 4500 60  0000 C CNN
-F 3 "" H 3900 4500 60  0000 C CNN
-	1    3900 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C8
-U 1 1 5E62BF6A
-P 4150 4600
-F 0 "C8" V 4200 4700 50  0000 C CNN
-F 1 "1u" V 4200 4500 50  0000 C CNN
-F 2 "" H 4150 4600 50  0001 C CNN
-F 3 "~" H 4150 4600 50  0001 C CNN
-	1    4150 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4000 5300 4050 5300
-Wire Wire Line
-	3850 5050 4050 5050
-Wire Wire Line
-	4050 5050 4050 5300
-Connection ~ 4050 5300
-Wire Wire Line
-	4050 5300 4450 5300
-Wire Wire Line
-	3550 5050 3350 5050
-Wire Wire Line
-	3750 4200 3800 4200
-Wire Wire Line
-	3800 4200 3800 4100
-Wire Wire Line
-	3800 4200 4450 4200
-Connection ~ 3800 4200
-Wire Wire Line
-	4150 4300 4450 4300
-Wire Wire Line
-	4150 4400 4450 4400
-Wire Wire Line
-	3900 4500 4050 4500
-Wire Wire Line
-	4450 4600 4250 4600
-Wire Wire Line
-	4050 4600 4050 4500
-Connection ~ 4050 4500
-Wire Wire Line
-	4050 4500 4450 4500
-Wire Wire Line
-	4050 4600 3850 4600
-Connection ~ 4050 4600
-Wire Wire Line
-	3850 4600 3850 4700
-Wire Wire Line
-	3850 4700 3750 4700
-Connection ~ 3850 4600
-Wire Wire Line
-	3850 4600 3750 4600
-Wire Wire Line
-	3850 4300 3750 4300
-Wire Wire Line
-	3850 4400 3750 4400
-$Comp
-L power:VCC #PWR?
-U 1 1 5E654F99
-P 6750 4100
-F 0 "#PWR?" H 6750 3950 50  0001 C CNN
-F 1 "VCC" V 6767 4228 50  0000 L CNN
-F 2 "" H 6750 4100 50  0001 C CNN
-F 3 "" H 6750 4100 50  0001 C CNN
-	1    6750 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E6557C0
-P 6750 5000
-F 0 "#PWR?" H 6750 5050 20  0001 C CNN
-F 1 "GND" V 6750 5029 30  0000 L CNN
-F 2 "" H 6750 5000 60  0000 C CNN
-F 3 "" H 6750 5000 60  0000 C CNN
-	1    6750 5000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5E65675E
-P 6750 5100
-F 0 "#PWR?" H 6750 4950 50  0001 C CNN
-F 1 "VCC" V 6767 5228 50  0000 L CNN
-F 2 "" H 6750 5100 50  0001 C CNN
-F 3 "" H 6750 5100 50  0001 C CNN
-	1    6750 5100
-	0    1    1    0   
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E658374
-P 6750 4200
-F 0 "#PWR?" H 6750 4250 20  0001 C CNN
-F 1 "GND" V 6750 4229 30  0000 L CNN
-F 2 "" H 6750 4200 60  0000 C CNN
-F 3 "" H 6750 4200 60  0000 C CNN
-	1    6750 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E6587B5
-P 6750 6200
-F 0 "#PWR?" H 6750 6250 20  0001 C CNN
-F 1 "GND" V 6750 6229 30  0000 L CNN
-F 2 "" H 6750 6200 60  0000 C CNN
-F 3 "" H 6750 6200 60  0000 C CNN
-	1    6750 6200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5E658CC7
-P 6750 6100
-F 0 "#PWR?" H 6750 5950 50  0001 C CNN
-F 1 "VCC" V 6767 6228 50  0000 L CNN
-F 2 "" H 6750 6100 50  0001 C CNN
-F 3 "" H 6750 6100 50  0001 C CNN
-	1    6750 6100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6600 6100 6750 6100
-Wire Wire Line
-	6600 6200 6750 6200
-Wire Wire Line
-	6600 5100 6750 5100
-Wire Wire Line
-	6600 5000 6750 5000
-Wire Wire Line
-	6600 4200 6750 4200
-Wire Wire Line
-	6600 4100 6750 4100
-Wire Wire Line
-	3600 6100 3600 6150
 $Sheet
-S 7700 4000 800  1350
+S 5700 4600 950  200 
 U 5E61E501
 F0 "Whimsy Matrix" 50
 F1 "WhimsyMatrix.sch" 50
-F2 "col0" I L 7700 4150 50 
-F3 "col1" I L 7700 4250 50 
-F4 "col2" I L 7700 4350 50 
-F5 "col3" I L 7700 4450 50 
-F6 "col4" I L 7700 4550 50 
-F7 "col5" I L 7700 4650 50 
-F8 "col6" I L 7700 4750 50 
-F9 "col7" I L 7700 4850 50 
-F10 "col8" I L 7700 4950 50 
-F11 "col9" I L 7700 5050 50 
-F12 "col10" I L 7700 5150 50 
-F13 "col11" I L 7700 5250 50 
-F14 "row0" I R 8500 4150 50 
-F15 "row1" I R 8500 4250 50 
-F16 "row2" I R 8500 4350 50 
-F17 "row3" I R 8500 4450 50 
-F18 "rot1" I R 8500 5150 50 
-F19 "rot0" I R 8500 5250 50 
+F18 "rot1" I R 6650 4700 50 
+F19 "rot0" I L 5700 4700 50 
 $EndSheet
-$Comp
-L promicro:ProMicro U1
-U 1 1 5E5EA037
-P 5550 1950
-F 0 "U1" H 5550 2900 60  0000 C CNN
-F 1 "ProMicro" H 5550 1400 60  0000 C CNN
-F 2 "" H 5650 900 60  0000 C CNN
-F 3 "" H 5650 900 60  0000 C CNN
-	1    5550 1950
-	1    0    0    -1  
-$EndComp
 $Bitmap
 Pos 9050 6850
 Scale 1.000000
@@ -1216,4 +721,200 @@ A4 D2 94 F0 8A 88 88 88 48 A5 29 E1 15 11 11 11 91 4A 53 C2 2B 22 22 22 22 95 A6
 CC D1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L keyboard_parts:SW_PUSH SW?
+U 1 1 5E66E667
+P 6200 4200
+F 0 "SW?" H 6350 4300 50  0000 C CNN
+F 1 "SW_PUSH" H 6200 4150 50  0000 C CNN
+F 2 "" H 6200 4200 60  0000 C CNN
+F 3 "" H 6200 4200 60  0000 C CNN
+	1    6200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5E66EAA6
+P 6600 4200
+F 0 "#PWR?" H 6600 4250 20  0001 C CNN
+F 1 "GND" V 6650 4150 30  0000 L CNN
+F 2 "" H 6600 4200 60  0000 C CNN
+F 3 "" H 6600 4200 60  0000 C CNN
+	1    6600 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5E67912E
+P 6400 3600
+F 0 "#PWR?" H 6400 3650 20  0001 C CNN
+F 1 "GND" H 6400 3629 30  0000 L CNN
+F 2 "" H 6400 3600 60  0000 C CNN
+F 3 "" H 6400 3600 60  0000 C CNN
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E679971
+P 6450 3500
+F 0 "#PWR?" H 6450 3350 50  0001 C CNN
+F 1 "VCC" H 6467 3673 50  0000 C CNN
+F 2 "" H 6450 3500 50  0001 C CNN
+F 3 "" H 6450 3500 50  0001 C CNN
+	1    6450 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 3400 6400 3400
+Wire Wire Line
+	6400 3400 6400 3600
+Wire Wire Line
+	6000 3500 6450 3500
+Wire Wire Line
+	6000 3700 6100 3700
+Wire Wire Line
+	6000 3600 6100 3600
+Wire Wire Line
+	6500 4200 6600 4200
+Wire Wire Line
+	5850 4200 5900 4200
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5E6ABEA3
+P 3400 3700
+F 0 "#PWR?" H 3400 3750 20  0001 C CNN
+F 1 "GND" V 3450 3650 30  0000 L CNN
+F 2 "" H 3400 3700 60  0000 C CNN
+F 3 "" H 3400 3700 60  0000 C CNN
+	1    3400 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 3600 3650 3600
+Wire Wire Line
+	3650 3700 3500 3700
+Wire Wire Line
+	3500 3600 3500 3700
+Wire Wire Line
+	3400 3700 3500 3700
+Connection ~ 3500 3700
+Wire Wire Line
+	5050 3600 5100 3600
+$Comp
+L power:VCC #PWR?
+U 1 1 5E6AEA7D
+P 5300 3700
+F 0 "#PWR?" H 5300 3550 50  0001 C CNN
+F 1 "VCC" H 5317 3873 50  0000 C CNN
+F 2 "" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5E6AF358
+P 5300 3500
+F 0 "#PWR?" H 5300 3550 20  0001 C CNN
+F 1 "GND" H 5300 3529 30  0000 L CNN
+F 2 "" H 5300 3500 60  0000 C CNN
+F 3 "" H 5300 3500 60  0000 C CNN
+	1    5300 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3500 5300 3500
+Wire Wire Line
+	5050 3700 5300 3700
+NoConn ~ 5050 3400
+Text GLabel 6100 3700 2    50   Input ~ 0
+SDA
+Text GLabel 6100 3600 2    50   Input ~ 0
+SCL
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5E674E33
+P 5800 3600
+F 0 "J1" H 5800 3300 50  0000 C CNN
+F 1 "OLED" H 5800 3800 50  0000 C CNN
+F 2 "" H 5800 3600 50  0001 C CNN
+F 3 "~" H 5800 3600 50  0001 C CNN
+	1    5800 3600
+	-1   0    0    1   
+$EndComp
+Text GLabel 5850 4200 0    50   Input ~ 0
+reset
+Text GLabel 5100 3600 2    50   Input ~ 0
+reset
+Text GLabel 3650 3800 0    50   Input ~ 0
+SDA
+Text GLabel 3650 3900 0    50   Input ~ 0
+SCL
+Text GLabel 3650 4000 0    50   Input ~ 0
+col0
+Text GLabel 3650 4100 0    50   Input ~ 0
+col1
+$Comp
+L promicro:ProMicro U1
+U 1 1 5E5EA037
+P 4350 4150
+F 0 "U1" H 4350 5100 60  0000 C CNN
+F 1 "ProMicro" H 4350 3600 60  0000 C CNN
+F 2 "" H 4450 3100 60  0000 C CNN
+F 3 "" H 4450 3100 60  0000 C CNN
+	1    4350 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 4200 0    50   Input ~ 0
+col2
+Text GLabel 3650 4300 0    50   Input ~ 0
+col3
+Text GLabel 5050 3800 2    50   Input ~ 0
+row0
+Text GLabel 5050 3900 2    50   Input ~ 0
+row1
+Text GLabel 5050 4000 2    50   Input ~ 0
+row2
+Text GLabel 5050 4100 2    50   Input ~ 0
+row3
+Text GLabel 5050 4200 2    50   Input ~ 0
+row4
+Text GLabel 5050 4300 2    50   Input ~ 0
+row5
+Text GLabel 5050 4400 2    50   Input ~ 0
+row6
+Text GLabel 5050 4500 2    50   Input ~ 0
+row7
+Text GLabel 3650 4400 0    50   Input ~ 0
+col4
+Text GLabel 3650 4500 0    50   Input ~ 0
+col5
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E7C12A5
+P 3150 4250
+F 0 "J2" H 2950 4500 50  0000 L CNN
+F 1 "LED Breakout" H 2750 4000 50  0000 L CNN
+F 2 "" H 3150 4250 50  0001 C CNN
+F 3 "~" H 3150 4250 50  0001 C CNN
+	1    3150 4250
+	1    0    0    -1  
+$EndComp
+Text Label 2850 4150 2    50   ~ 0
+VCC
+Text Label 2850 4350 2    50   ~ 0
+GND
+Text Label 2850 4250 2    50   ~ 0
+LED
+Wire Wire Line
+	2850 4150 2950 4150
+Wire Wire Line
+	2950 4250 2850 4250
+Wire Wire Line
+	2950 4350 2850 4350
+Text HLabel 3650 3400 0    50   Input ~ 0
+rot0
+Text HLabel 3650 3500 0    50   Input ~ 0
+rot1
 $EndSCHEMATC
