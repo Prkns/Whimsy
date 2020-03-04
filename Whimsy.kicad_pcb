@@ -5,7 +5,7 @@
     (drawings 10)
     (tracks 0)
     (zones 0)
-    (modules 100)
+    (modules 102)
     (nets 77)
   )
 
@@ -260,15 +260,37 @@
     (add_net row7)
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FDFD4)
-    (at 109.75 165.548751)
+  (module SofleKeyboard-footprint:M2_HOLE_PCB (layer F.Cu) (tedit 5D908E44) (tstamp 5E601D6E)
+    (at 35.71875 100.0125)
+    (fp_text reference TH1 (at 0 2.7) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value HOLE (at 0 -2.6) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 4 4) (drill 2.2) (layers *.Cu *.Mask Dwgs.User))
+  )
+
+  (module SofleKeyboard-footprint:M2_HOLE_PCB (layer F.Cu) (tedit 5D908E44) (tstamp 5E5FEBD7)
+    (at 21.43125 100.0125)
+    (fp_text reference TH1 (at 0 2.7) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value HOLE (at 0 -2.6) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 4 4) (drill 2.2) (layers *.Cu *.Mask Dwgs.User))
+  )
+
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E6038AE)
+    (at 275.59 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D96A)
-    (fp_text reference D1 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D1 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -279,21 +301,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 1 "Net-(D1-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 2 row0))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FDFE2)
-    (at 146.95 172.418751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E6018FA)
+    (at 273.20875 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8E0)
-    (fp_text reference D2 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D2 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -304,21 +326,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 3 row1))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 4 "Net-(D2-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FDFF0)
-    (at 115.95 165.548751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E600326)
+    (at 270.8275 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D850)
-    (fp_text reference D3 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D3 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -329,21 +351,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 5 row2))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 6 "Net-(D3-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FDFFE)
-    (at 97.35 168.098751)
+    (at 275.59 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7C0)
-    (fp_text reference D4 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D4 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -354,21 +376,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 7 "Net-(D4-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 8 row3))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE00C)
-    (at 134.55 174.968751)
+    (at 256.54 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D657)
-    (fp_text reference D5 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D5 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -379,21 +401,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 9 "Net-(D5-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 2 row0))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE01A)
-    (at 97.35 165.548751)
+    (at 251.7775 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8D4)
-    (fp_text reference D6 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D6 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -404,21 +426,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 3 row1))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 10 "Net-(D6-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE028)
-    (at 103.55 165.548751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E6002B1)
+    (at 247.015 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D844)
-    (fp_text reference D7 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D7 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -429,21 +451,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 11 "Net-(D7-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 5 row2))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE036)
-    (at 140.75 172.418751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5F9520)
+    (at 256.54 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7B4)
-    (fp_text reference D8 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D8 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -454,21 +476,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 12 "Net-(D8-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 8 row3))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE044)
-    (at 134.55 172.418751)
+    (at 237.49 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D958)
-    (fp_text reference D9 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D9 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -479,21 +501,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 2 row0))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 13 "Net-(D9-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE052)
-    (at 146.95 169.868751)
+    (at 232.7275 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8C8)
-    (fp_text reference D10 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D10 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -504,21 +526,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 3 row1))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 14 "Net-(D10-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE060)
-    (at 140.75 169.868751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E60028A)
+    (at 227.965 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D838)
-    (fp_text reference D11 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D11 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -529,21 +551,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 15 "Net-(D11-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 5 row2))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE06E)
-    (at 153.15 167.318751)
+    (at 237.49 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7A8)
-    (fp_text reference D12 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D12 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -554,21 +576,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 16 "Net-(D12-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 8 row3))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE07C)
-    (at 146.95 167.318751)
+    (at 218.44 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D946)
-    (fp_text reference D13 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D13 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -579,21 +601,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 17 "Net-(D13-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 2 row0))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE08A)
-    (at 140.75 167.318751)
+    (at 213.6775 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8B6)
-    (fp_text reference D14 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D14 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -604,21 +626,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 18 "Net-(D14-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 3 row1))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE098)
-    (at 153.15 164.768751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E600263)
+    (at 208.915 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D826)
-    (fp_text reference D15 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D15 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -629,21 +651,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 19 "Net-(D15-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 5 row2))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE0A6)
-    (at 146.95 164.768751)
+    (at 218.44 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D796)
-    (fp_text reference D16 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D16 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -654,21 +676,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 20 "Net-(D16-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 8 row3))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE0B4)
-    (at 140.75 164.768751)
+    (at 199.39 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D940)
-    (fp_text reference D17 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D17 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -679,21 +701,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 2 row0))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 21 "Net-(D17-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE0C2)
-    (at 134.55 169.868751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E6031FA)
+    (at 194.6275 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8B0)
-    (fp_text reference D18 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D18 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -704,21 +726,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 3 row1))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 22 "Net-(D18-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE0D0)
-    (at 128.35 174.968751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E600374)
+    (at 189.865 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D820)
-    (fp_text reference D19 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D19 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -729,21 +751,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 5 row2))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 23 "Net-(D19-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE0DE)
-    (at 122.15 177.518751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FAA77)
+    (at 197.00875 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D790)
-    (fp_text reference D20 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D20 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -754,21 +776,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 8 row3))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 24 "Net-(D20-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE0EC)
-    (at 115.95 177.518751)
+    (at 180.34 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D910)
-    (fp_text reference D21 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D21 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -779,21 +801,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 2 row0))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 25 "Net-(D21-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE0FA)
-    (at 109.75 177.518751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E603273)
+    (at 175.5775 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D880)
-    (fp_text reference D22 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D22 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -804,21 +826,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 3 row1))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 26 "Net-(D22-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE108)
-    (at 122.15 174.968751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E60039B)
+    (at 170.815 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7F0)
-    (fp_text reference D23 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D23 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -829,21 +851,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 27 "Net-(D23-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 5 row2))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE116)
-    (at 115.95 174.968751)
+    (at 166.0525 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D766)
-    (fp_text reference D24 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D24 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -854,21 +876,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 28 "Net-(D24-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 8 row3))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE124)
-    (at 128.35 172.418751)
+    (at 161.29 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D90A)
-    (fp_text reference D25 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D25 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -879,21 +901,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 29 "Net-(D25-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 2 row0))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE132)
-    (at 122.15 172.418751)
+    (at 156.5275 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D87A)
-    (fp_text reference D26 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D26 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -904,21 +926,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 30 "Net-(D26-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 3 row1))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE140)
-    (at 115.95 172.418751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E6002D8)
+    (at 151.765 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7EA)
-    (fp_text reference D27 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D27 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -929,21 +951,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 5 row2))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 31 "Net-(D27-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE14E)
-    (at 128.35 169.868751)
+    (at 135.09625 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D748)
-    (fp_text reference D28 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D28 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -954,21 +976,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 8 row3))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 32 "Net-(D28-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE15C)
-    (at 122.15 169.868751)
+    (at 142.24 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D904)
-    (fp_text reference D29 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D29 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -979,21 +1001,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 33 row4))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 34 "Net-(D29-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE16A)
-    (at 134.55 167.318751)
+    (at 137.4775 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D874)
-    (fp_text reference D30 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D30 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1004,21 +1026,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 35 row5))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 36 "Net-(D30-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE178)
-    (at 128.35 167.318751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E600215)
+    (at 132.715 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7E4)
-    (fp_text reference D31 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D31 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1029,21 +1051,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 37 "Net-(D31-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 38 row6))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE186)
-    (at 122.15 167.318751)
+    (at 113.665 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D760)
-    (fp_text reference D32 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D32 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1054,21 +1076,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 39 row7))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 40 "Net-(D32-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE194)
-    (at 134.55 164.768751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E60346B)
+    (at 123.19 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8FE)
-    (fp_text reference D33 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D33 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1079,21 +1101,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 41 "Net-(D33-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 33 row4))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE1A2)
-    (at 128.35 164.768751)
+    (at 118.4275 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D86E)
-    (fp_text reference D34 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D34 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1104,21 +1126,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 42 "Net-(D34-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 35 row5))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE1B0)
-    (at 122.15 164.768751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E60023C)
+    (at 113.665 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7DE)
-    (fp_text reference D35 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D35 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1129,21 +1151,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 38 row6))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 43 "Net-(D35-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE1BE)
-    (at 115.95 168.098751)
+    (at 94.615 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D75A)
-    (fp_text reference D36 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D36 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1154,21 +1176,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 44 "Net-(D36-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 39 row7))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE1CC)
-    (at 109.75 173.198751)
+    (at 104.14 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8F8)
-    (fp_text reference D37 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D37 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1179,21 +1201,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 33 row4))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 45 "Net-(D37-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE1DA)
-    (at 103.55 178.298751)
+    (at 99.3775 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D868)
-    (fp_text reference D38 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D38 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1204,21 +1226,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 35 row5))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 46 "Net-(D38-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE1E8)
-    (at 97.35 178.298751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E60034D)
+    (at 94.615 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7D8)
-    (fp_text reference D39 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D39 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1229,21 +1251,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 47 "Net-(D39-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 38 row6))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE1F6)
-    (at 103.55 175.748751)
+    (at 75.565 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D754)
-    (fp_text reference D40 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D40 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1254,21 +1276,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 39 row7))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 48 "Net-(D40-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE204)
-    (at 97.35 175.748751)
+    (at 85.09 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8F2)
-    (fp_text reference D41 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D41 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1279,21 +1301,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 49 "Net-(D41-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 33 row4))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE212)
-    (at 103.55 173.198751)
+    (at 80.3275 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D862)
-    (fp_text reference D42 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D42 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1304,21 +1326,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 50 "Net-(D42-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 35 row5))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE220)
-    (at 97.35 173.198751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E6002FF)
+    (at 75.565 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7D2)
-    (fp_text reference D43 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D43 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1329,21 +1351,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 38 row6))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 51 "Net-(D43-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE22E)
-    (at 109.75 170.648751)
+    (at 56.515 126.20625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D74E)
-    (fp_text reference D44 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D44 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1354,21 +1376,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 52 "Net-(D44-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 39 row7))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE23C)
-    (at 103.55 170.648751)
+    (at 61.2775 69.05625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D8EC)
-    (fp_text reference D45 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D45 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1379,21 +1401,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 33 row4))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 53 "Net-(D45-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE24A)
-    (at 97.35 170.648751)
+    (at 58.89625 88.10625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D85C)
-    (fp_text reference D46 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D46 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
@@ -1404,21 +1426,21 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 35 row5))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 54 "Net-(D46-Pad2)"))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE258)
-    (at 109.75 168.098751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E600428)
+    (at 56.515 107.15625 90)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E66D7CC)
-    (fp_text reference D47 (at 0 1.5) (layer F.SilkS) hide
+    (fp_text reference D47 (at 0 1.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D (at 0 -1.2) (layer F.Fab) hide
+    (fp_text value D (at 0 -1.2 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
@@ -1429,14 +1451,14 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer B.SilkS) (width 0.15))
     (fp_line (start 0.4 -0.7) (end 0.4 0.7) (layer B.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer B.SilkS) (width 0.15))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 55 "Net-(D47-Pad2)"))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 90) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 38 row6))
   )
 
-  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FE266)
-    (at 103.55 168.098751)
+  (module SofleKeyboard-footprint:Diode_SOD123 placed (layer F.Cu) (tedit 5B9E4996) (tstamp 5E5FBA24)
+    (at 28.575 124.93625 180)
     (descr "Diode, DO-41, SOD81, Horizontal, RM 10mm,")
     (tags "Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,")
     (path /5E61E501/5E80A1E9)
@@ -1454,14 +1476,14 @@
     (fp_line (start 0.4 0.7) (end -0.5 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 0) (end 0.4 -0.7) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.7) (end -0.5 0.7) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole rect (at -1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at -1.7 0 180) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 39 row7))
-    (pad 2 thru_hole rect (at 1.7 0) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at 1.7 0 180) (size 1.8 1.5) (drill 0.4) (layers *.Cu *.Mask)
       (net 56 "Net-(D48-Pad2)"))
   )
 
   (module SofleKeyboard-footprint:OLED_4Pin (layer F.Cu) (tedit 59FC8837) (tstamp 5E5FE276)
-    (at 23.8125 97.63125)
+    (at 23.65375 95.25)
     (descr "Connecteur 6 pins")
     (tags "CONN DEV")
     (path /5E674E33)
@@ -1490,7 +1512,7 @@
   )
 
   (module SofleKeyboard-footprint:LED (layer F.Cu) (tedit 5D8F83FF) (tstamp 5E5FE29B)
-    (at 40.48125 76.2 180)
+    (at 38.735 96.95275 180)
     (path /5E7C12A5)
     (fp_text reference J2 (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2460,7 +2482,7 @@
       (net 26 "Net-(D22-Pad2)"))
   )
 
-  (module keebs:Mx_Alps_100 (layer F.Cu) (tedit 58057B75) (tstamp 5E602FE5)
+  (module keebs:Mx_Alps_100 (layer F.Cu) (tedit 58057B75) (tstamp 5E5FFE9A)
     (at 161.925 107.15625)
     (descr MXALPS)
     (tags MXALPS)
@@ -3560,15 +3582,15 @@
     (pad HOLE np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu))
   )
 
-  (module SofleKeyboard-footprint:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified (layer F.Cu) (tedit 5D5C0C22) (tstamp 5E5FE9BF)
-    (at 28.575 109.5375)
+  (module SofleKeyboard-footprint:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified (layer F.Cu) (tedit 5D5C0C22) (tstamp 5E5FB811)
+    (at 28.575 114.3 270)
     (descr "Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
     (tags "rotary encoder")
     (path /5E61E501/5E7F9812)
-    (fp_text reference SW1 (at 4.24 4.6) (layer F.SilkS) hide
+    (fp_text reference SW1 (at 4.24 4.6 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Rotary_Encoder_Switch (at 0 7.9) (layer F.Fab)
+    (fp_text value Rotary_Encoder_Switch (at 0 7.9 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 3 0) (layer F.Fab) (width 0.12))
@@ -3605,17 +3627,17 @@
     (fp_circle (center 0 0) (end 3 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0 -0.5) (end 0 0.5) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.5 0) (end 0.5 0) (layer B.SilkS) (width 0.12))
-    (pad A thru_hole circle (at -7.5 -2.5) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (pad A thru_hole circle (at -7.5 -2.5 270) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 71 "/Whimsy Matrix/rot0"))
-    (pad C thru_hole circle (at -7.5 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (pad C thru_hole circle (at -7.5 0 270) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 60 +5V))
-    (pad B thru_hole circle (at -7.5 2.5) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (pad B thru_hole circle (at -7.5 2.5 270) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 72 "/Whimsy Matrix/rot1"))
-    (pad MP thru_hole rect (at 0 -5.6) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
-    (pad MP thru_hole rect (at 0 5.6) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
-    (pad S2 thru_hole circle (at 7 -2.5) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (pad MP thru_hole rect (at 0 -5.6 270) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
+    (pad MP thru_hole rect (at 0 5.6 270) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
+    (pad S2 thru_hole circle (at 7 -2.5 270) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 56 "Net-(D48-Pad2)"))
-    (pad S1 thru_hole circle (at 7 2.5) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (pad S1 thru_hole circle (at 7 2.5 270) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 63 col0))
     (model ${KISYS3DMOD}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl
       (at (xyz 0 0 0))
@@ -3624,8 +3646,8 @@
     )
   )
 
-  (module SofleKeyboard-footprint:TACT_SWITCH_TVBP06 (layer F.Cu) (tedit 5B8CD44F) (tstamp 5E5FE9D4)
-    (at 28.575 121.44375 180)
+  (module SofleKeyboard-footprint:TACT_SWITCH_TVBP06 (layer F.Cu) (tedit 5B8CD44F) (tstamp 5E602220)
+    (at 64.21 77.94625)
     (path /5E66E667)
     (fp_text reference SW2 (at 0 -1.7) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3652,14 +3674,14 @@
     (fp_line (start 3 1.7) (end 3 1.1) (layer B.SilkS) (width 0.15))
     (fp_line (start -3 1.7) (end -3 1.1) (layer B.SilkS) (width 0.15))
     (fp_line (start -3 -1.8) (end -3 -1.1) (layer B.SilkS) (width 0.15))
-    (pad 1 thru_hole circle (at -3.25 0 180) (size 2 2) (drill 1.3) (layers *.Cu *.Mask)
+    (pad 1 thru_hole circle (at -3.25 0) (size 2 2) (drill 1.3) (layers *.Cu *.Mask)
       (net 73 reset))
-    (pad 2 thru_hole circle (at 3.25 0 180) (size 2 2) (drill 1.3) (layers *.Cu *.Mask)
+    (pad 2 thru_hole circle (at 3.25 0) (size 2 2) (drill 1.3) (layers *.Cu *.Mask)
       (net 60 +5V))
   )
 
   (module Keebio-Parts:Elite-C (layer F.Cu) (tedit 5BDF551E) (tstamp 5E5FEA4D)
-    (at 28.575 78.58125 270)
+    (at 28.575 76.04125 270)
     (path /5E5EA037)
     (fp_text reference U1 (at 0 1.625 90) (layer F.SilkS) hide
       (effects (font (size 1.2 1.2) (thickness 0.2032)))
