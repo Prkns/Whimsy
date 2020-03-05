@@ -1494,10 +1494,6 @@ F 3 "" H 8750 5400 60  0000 C CNN
 	1    8750 5400
 	0    1    1    0   
 $EndComp
-Text HLabel 8700 5500 0    50   Input ~ 0
-rot1
-Text HLabel 8700 5300 0    50   Input ~ 0
-rot0
 Connection ~ 5100 4850
 Text Label 10600 4450 0    50   ~ 0
 enc0
@@ -2291,4 +2287,16 @@ Connection ~ 1100 3700
 Wire Wire Line
 	950  3100 1100 3100
 Connection ~ 1100 3100
+Wire Wire Line
+	8300 4550 8300 4450
+Wire Wire Line
+	8300 4450 8400 4450
+Wire Wire Line
+	2700 3400 2700 3300
+Wire Wire Line
+	2700 3300 2800 3300
+Text GLabel 8700 5300 0    50   Input ~ 0
+rot0
+Text GLabel 8700 5500 0    50   Input ~ 0
+rot1
 $EndSCHEMATC

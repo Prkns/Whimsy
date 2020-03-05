@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title "Whimsey"
-Date "2020-03-03"
-Rev "A"
+Title "Whimsy"
+Date "2020-03-05"
+Rev "0.1"
 Comp "Prkns"
 Comment1 ""
 Comment2 ""
@@ -1494,10 +1494,6 @@ F 3 "" H 8750 5400 60  0000 C CNN
 	1    8750 5400
 	0    1    1    0   
 $EndComp
-Text HLabel 8700 5500 0    50   Input ~ 0
-rot1
-Text HLabel 8700 5300 0    50   Input ~ 0
-rot0
 Connection ~ 5100 4850
 Text Label 10600 4450 0    50   ~ 0
 enc0
@@ -2299,4 +2295,8 @@ Wire Wire Line
 	2700 3400 2700 3300
 Wire Wire Line
 	2700 3300 2800 3300
+Text GLabel 8700 5300 0    50   Input ~ 0
+rot0
+Text GLabel 8700 5500 0    50   Input ~ 0
+rot1
 $EndSCHEMATC
