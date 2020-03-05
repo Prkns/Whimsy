@@ -1,4 +1,4 @@
-409544888668542
+412711517090947
 Keebio-Parts
 3_Pin_Jumper
 
@@ -190,6 +190,13 @@ Diode_Long
 2
 Keebio-Parts
 Elite-C
+
+
+0
+29
+29
+Keebio-Parts
+Elite-C-NoSilk
 
 
 0
@@ -986,6 +993,13 @@ solder_jumper
 0
 2
 2
+KiCad-SSD1306_OLED-0
+SSD1306_OLED-0.91-128x32
+
+
+0
+14
+14
 SofleKeyboard-footprint
 1pin_conn
 Resitance 3 pas
