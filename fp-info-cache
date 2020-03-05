@@ -1,4 +1,11 @@
-463095181986268
+466262066631543
+CustomPrints
+Wave
+
+
+0
+0
+0
 Display
 AG12864E
 STN/FSTN LCD 128x64 dot https://www.digchip.com/datasheets/parts/datasheet/1121/AG-12864E-pdf.php
@@ -1289,6 +1296,13 @@ MJ-4PP-9
 4
 SofleKeyboard-footprint
 OLED_4Pin
+Connecteur 6 pins
+CONN DEV
+0
+4
+4
+SofleKeyboard-footprint
+OLED_SSD1306-128x32
 Connecteur 6 pins
 CONN DEV
 0
