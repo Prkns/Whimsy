@@ -770,33 +770,33 @@ Text GLabel 3700 3750 0    50   Input ~ 0
 SDA
 Text GLabel 3700 3850 0    50   Input ~ 0
 SCL
-Text GLabel 5100 4450 2    50   Input ~ 0
-col0
-Text GLabel 5100 4350 2    50   Input ~ 0
-col1
 Text GLabel 5100 4250 2    50   Input ~ 0
-col2
+col0
 Text GLabel 5100 4150 2    50   Input ~ 0
+col1
+Text GLabel 5100 4050 2    50   Input ~ 0
+col2
+Text GLabel 5100 4450 2    50   Input ~ 0
 col3
-Text GLabel 3700 4050 0    50   Input ~ 0
+Text GLabel 5100 3850 2    50   Input ~ 0
 row0
-Text GLabel 3700 4150 0    50   Input ~ 0
+Text GLabel 5100 3950 2    50   Input ~ 0
 row1
 Text GLabel 3700 4350 0    50   Input ~ 0
 row2
-Text GLabel 4200 4850 3    50   Input ~ 0
+Text GLabel 4600 4850 3    50   Input ~ 0
 row3
-Text GLabel 3700 3950 0    50   Input ~ 0
+Text GLabel 5100 3750 2    50   Input ~ 0
 row4
 Text GLabel 3700 4250 0    50   Input ~ 0
 row5
 Text GLabel 3700 4450 0    50   Input ~ 0
 row6
-Text GLabel 4300 4850 3    50   Input ~ 0
+Text GLabel 4500 4850 3    50   Input ~ 0
 row7
-Text GLabel 5100 4050 2    50   Input ~ 0
+Text GLabel 5100 4350 2    50   Input ~ 0
 col4
-Text GLabel 5100 3950 2    50   Input ~ 0
+Text GLabel 3700 4150 0    50   Input ~ 0
 col5
 $Comp
 L Connector_Generic:Conn_01x03 J2
@@ -819,9 +819,9 @@ Wire Wire Line
 	2950 4250 2850 4250
 Wire Wire Line
 	2950 4350 2850 4350
-Text GLabel 4600 4850 3    50   Input ~ 0
+Text GLabel 4200 4850 3    50   Input ~ 0
 rot0
-Text GLabel 4500 4850 3    50   Input ~ 0
+Text GLabel 4300 4850 3    50   Input ~ 0
 rot1
 $Comp
 L minato-cache:keebio-components_Elite-C U1
@@ -847,8 +847,8 @@ Wire Wire Line
 	5100 3450 5350 3450
 Wire Wire Line
 	5100 3650 5350 3650
-NoConn ~ 5100 3850
-NoConn ~ 5100 3750
+NoConn ~ 3700 4050
+NoConn ~ 3700 3950
 NoConn ~ 5100 3350
 NoConn ~ 3700 3450
 NoConn ~ 3700 3350
