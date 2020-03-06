@@ -1483,17 +1483,6 @@ F 3 "~" H 10200 5500 50  0001 C CNN
 	1    10200 5500
 	-1   0    0    1   
 $EndComp
-$Comp
-L keyboard_parts:GND #PWR0107
-U 1 1 5E8C39A1
-P 8750 5400
-F 0 "#PWR0107" H 8750 5450 20  0001 C CNN
-F 1 "GND" H 8750 5459 30  0000 C CNN
-F 2 "" H 8750 5400 60  0000 C CNN
-F 3 "" H 8750 5400 60  0000 C CNN
-	1    8750 5400
-	0    1    1    0   
-$EndComp
 Connection ~ 5100 4850
 Text Label 10600 4450 0    50   ~ 0
 enc0
@@ -2299,4 +2288,15 @@ Text GLabel 8700 5300 0    50   Input ~ 0
 rot0
 Text GLabel 8700 5500 0    50   Input ~ 0
 rot1
+$Comp
+L power:GND #PWR0106
+U 1 1 5E66BE2A
+P 8750 5400
+F 0 "#PWR0106" H 8750 5150 50  0001 C CNN
+F 1 "GND" V 8755 5272 50  0000 R CNN
+F 2 "" H 8750 5400 50  0001 C CNN
+F 3 "" H 8750 5400 50  0001 C CNN
+	1    8750 5400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
