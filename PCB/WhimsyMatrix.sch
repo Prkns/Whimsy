@@ -5,17 +5,14 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "Whimsy"
-Date "2020-03-05"
-Rev "0.1"
+Date "2020-03-19"
+Rev "0.3"
 Comp "Prkns"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	5100 3700 5900 3700
-Connection ~ 5100 3700
 Wire Wire Line
 	4300 3700 5100 3700
 $Comp
@@ -217,9 +214,6 @@ Connection ~ 7500 4300
 Wire Wire Line
 	6700 4300 7500 4300
 Wire Wire Line
-	5100 4300 5900 4300
-Connection ~ 5100 4300
-Wire Wire Line
 	4300 4300 5100 4300
 Connection ~ 4300 4300
 Wire Wire Line
@@ -380,9 +374,6 @@ Wire Wire Line
 	7500 3100 8300 3100
 Wire Wire Line
 	6700 3100 7500 3100
-Connection ~ 5100 3100
-Wire Wire Line
-	5100 3100 5900 3100
 Connection ~ 4300 3100
 Wire Wire Line
 	4300 3100 5100 3100
@@ -1426,7 +1417,7 @@ Connection ~ 1800 2700
 Wire Wire Line
 	2600 2400 2600 2700
 Connection ~ 2600 2700
-Text Notes 5350 4950 0    50   ~ 0
+Text Notes 5350 4900 0    50   ~ 0
 ^ Space
 Wire Wire Line
 	8300 4850 9100 4850
@@ -1483,7 +1474,6 @@ F 3 "~" H 10200 5500 50  0001 C CNN
 	1    10200 5500
 	-1   0    0    1   
 $EndComp
-Connection ~ 5100 4850
 Text Label 10600 4450 0    50   ~ 0
 enc0
 Text Label 9900 4850 0    50   ~ 0
@@ -1504,8 +1494,6 @@ Wire Wire Line
 	8700 5500 9350 5500
 Wire Wire Line
 	8700 5300 9350 5300
-Wire Wire Line
-	5100 4850 5900 4850
 $Bitmap
 Pos 9150 6850
 Scale 1.000000
@@ -2299,4 +2287,16 @@ F 3 "" H 8750 5400 50  0001 C CNN
 	1    8750 5400
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5900 4850 6700 4850
+Connection ~ 6700 4850
+Wire Wire Line
+	5900 3100 6700 3100
+Connection ~ 6700 3100
+Wire Wire Line
+	5900 3700 6700 3700
+Connection ~ 6700 3700
+Wire Wire Line
+	5900 4300 6700 4300
+Connection ~ 6700 4300
 $EndSCHEMATC
