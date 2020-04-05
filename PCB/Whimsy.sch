@@ -761,64 +761,43 @@ U 1 1 5E674E33
 P 5800 3600
 F 0 "J1" H 5800 3300 50  0000 C CNN
 F 1 "OLED" H 5800 3800 50  0000 C CNN
-F 2 "SofleKeyboard-footprint:OLED_4Pin" H 5800 3600 50  0001 C CNN
+F 2 "CustomPrints:OLED_4Pin" H 5800 3600 50  0001 C CNN
 F 3 "~" H 5800 3600 50  0001 C CNN
 	1    5800 3600
 	-1   0    0    1   
 $EndComp
-Text GLabel 3700 3750 0    50   Input ~ 0
+Text GLabel 5100 3850 2    50   Input ~ 0
 SDA
-Text GLabel 3700 3850 0    50   Input ~ 0
+Text GLabel 5100 3750 2    50   Input ~ 0
 SCL
 Text GLabel 5100 4250 2    50   Input ~ 0
 col0
-Text GLabel 5100 4150 2    50   Input ~ 0
+Text GLabel 3700 4250 0    50   Input ~ 0
 col1
-Text GLabel 5100 4050 2    50   Input ~ 0
+Text GLabel 5100 4150 2    50   Input ~ 0
 col2
-Text GLabel 5100 4450 2    50   Input ~ 0
+Text GLabel 3700 4150 0    50   Input ~ 0
 col3
-Text GLabel 5100 3850 2    50   Input ~ 0
+Text GLabel 3700 3850 0    50   Input ~ 0
 row0
 Text GLabel 5100 3950 2    50   Input ~ 0
 row1
-Text GLabel 3700 4350 0    50   Input ~ 0
-row2
-Text GLabel 4600 4850 3    50   Input ~ 0
-row3
-Text GLabel 5100 3750 2    50   Input ~ 0
-row4
-Text GLabel 3700 4250 0    50   Input ~ 0
-row5
-Text GLabel 3700 4450 0    50   Input ~ 0
-row6
-Text GLabel 4500 4850 3    50   Input ~ 0
-row7
 Text GLabel 5100 4350 2    50   Input ~ 0
+row2
+Text GLabel 3700 4450 0    50   Input ~ 0
+row3
+Text GLabel 3700 3750 0    50   Input ~ 0
+row4
+Text GLabel 3700 3950 0    50   Input ~ 0
+row5
+Text GLabel 3700 4350 0    50   Input ~ 0
+row6
+Text GLabel 5100 4450 2    50   Input ~ 0
+row7
+Text GLabel 5100 4050 2    50   Input ~ 0
 col4
-Text GLabel 3700 4150 0    50   Input ~ 0
+Text GLabel 3700 4050 0    50   Input ~ 0
 col5
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5E7C12A5
-P 3150 4250
-F 0 "J2" H 2950 4500 50  0000 L CNN
-F 1 "LED Breakout" H 2750 4000 50  0000 L CNN
-F 2 "SofleKeyboard-footprint:LED" H 3150 4250 50  0001 C CNN
-F 3 "~" H 3150 4250 50  0001 C CNN
-	1    3150 4250
-	1    0    0    -1  
-$EndComp
-Text Label 2850 4150 2    50   ~ 0
-VCC
-Text Label 2850 4350 2    50   ~ 0
-GND
-Wire Wire Line
-	2850 4150 2950 4150
-Wire Wire Line
-	2950 4250 2850 4250
-Wire Wire Line
-	2950 4350 2850 4350
 Text GLabel 4200 4850 3    50   Input ~ 0
 rot0
 Text GLabel 4300 4850 3    50   Input ~ 0
@@ -829,7 +808,7 @@ U 1 1 5E7BE733
 P 4400 3900
 F 0 "U1" H 4400 4600 60  0000 C CNN
 F 1 "Elite-C" H 4400 2650 60  0000 C CNN
-F 2 "Keebio-Parts:Elite-C-NoSilk" V 5450 1400 60  0001 C CNN
+F 2 "CustomPrints:Elite-C-NoSilk" V 5450 1400 60  0001 C CNN
 F 3 "" V 5450 1400 60  0001 C CNN
 	1    4400 3900
 	1    0    0    -1  
@@ -847,16 +826,12 @@ Wire Wire Line
 	5100 3450 5350 3450
 Wire Wire Line
 	5100 3650 5350 3650
-NoConn ~ 3700 4050
-NoConn ~ 3700 3950
+NoConn ~ 4600 4850
+NoConn ~ 4500 4850
 NoConn ~ 5100 3350
 NoConn ~ 3700 3450
 NoConn ~ 3700 3350
 NoConn ~ 5100 3550
-Text GLabel 2850 4250 0    50   Input ~ 0
-LED
-Text GLabel 4400 4850 3    50   Input ~ 0
-LED
 $Comp
 L power:GND #PWR0101
 U 1 1 5E65D345
@@ -890,4 +865,5 @@ F 3 "" H 6400 3600 50  0001 C CNN
 	1    6400 3600
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4400 4850
 $EndSCHEMATC
