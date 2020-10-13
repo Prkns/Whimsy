@@ -1,4 +1,4 @@
-# Whimsy - Rev0.2
+# Whimsy - Rev0.21
 
 A 40% keyboard with exposed Elite-C/OLED and Rotary encoder.
 
@@ -8,7 +8,9 @@ I've not taken delivery of the physical PCBs as of yet so i can't comment on how
 
 **STILL IN DEVELOPMENT - NOT READY FOR PRODUCTION - DO NOT ORDER**
 
-![Whimsy](https://raw.githubusercontent.com/Prkns/Whimsy/master/Renders/Whimsy-RevA-5.png)
+![Whimsy](https://raw.githubusercontent.com/Prkns/Whimsy/master/Images/Whimsy-128x32.png)
+
+![Whimsy](https://raw.githubusercontent.com/Prkns/Whimsy/master/Images/Whimsy-128x64.png)
 
 ---
 
