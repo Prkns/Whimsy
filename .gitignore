@@ -1,21 +1,12 @@
-Renders/STL
-Renders/Edits
-Renders/Case Render
-Renders/PCB Renders
-Renders/Board Renders/rev2
-Renders/Board Renders/rev1/GMK*
-Renders/Board Renders/rev1/Edited Renders/Original
-
 Firmware/whimsy-kbfirmware.json
 Firmware/whimsy-pin_schematic.png
 Firmware/whimsy.zip
 
 Case
-
+Renders
 Plate
+Misc
 
 *.psd
-
-Misc
 
 .DS_Store
